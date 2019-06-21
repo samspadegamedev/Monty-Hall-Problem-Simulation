@@ -1,12 +1,16 @@
 /// @description Monty Hall Controller
 
 
+#region //holding space pauses the simulation
 if (keyboard_check(vk_space)) {
 	exit;
 }
+#endregion
 
 
-//total times run
+#region //run simulation
+
+//increase times run
 global.total_runs += 1;
 
 //shuffle deck
@@ -31,5 +35,7 @@ with (obj_picker) {
 	event_user(1);
 }
 
+#endregion
 
-show_debug_message("Total Runs: " + string(global.total_runs));
+
+
