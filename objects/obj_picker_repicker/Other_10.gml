@@ -1,6 +1,7 @@
 /// @description Picker - Repick
 
 
+//randomly choose one of the remaining cards
 var repeat_loop = true;
 while (repeat_loop == true) {
 
